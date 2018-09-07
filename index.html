@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Type-Speech</title>
+</head>
+<style>
+    body {
+        background: #141414;
+    }
+</style>
+
+<body class="text-white">
+    <div class="container text-center">
+        <img class="mb-5 mt-5" src="./img/speech-api-lead.png" alt="" height="150px">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <textarea name="" placeholder="Type Anything..." id="text-input" class="form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="range">Range</label>
+                        <div id="rate-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="pitch">Pitch</label>
+                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <select id="voice-select" class="form-control form-control-lg"></select>
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block">Speak</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
